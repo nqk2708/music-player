@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="player">
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now Playing</h4>
+                <h2>Name</h2>
+                <h5>Singer</h5>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image:url('')"></div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+              <div class="btn btn-repeat pointer">
+                <i class="ti-loop"></i>
+              </div>
+              <div class="btn btn-prev pointer">
+                <i class="ti-control-skip-backward"></i>
+              </div>
+              <div class="btn btn-toggle-play pointer">
+                <i class="ti-control-pause icon-pause"></i>
+                <i class="fas fa-play icon-play pl6"></i>
+              </div>
+              <div class="btn btn-next pointer">
+                <i class="ti-control-skip-forward"></i>
+              </div>
+              <div class="btn btn-random pointer">
+                <i class="ti-control-shuffle"></i>
+              </div>            
+            </div>
+
+            <div class="time">
+              <div class="curTime">0:00</div>
+              <div class="durationTime">0:00</div>
+            </div>
+                
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <div class="vol-control">
+              <div class="vol-btn">
+                <i class="fas fa-volume-off voloff-icon"></i>
+                <i class="fas fa-volume-up volume-icon"></i>
+              </div>
+              <input id="volume" class="volume" type="range" value="75" step="1" min="0" max="100">
+            </div>
+            
+            <audio id="audio" src=""></audio>
+        </div>
+    
+    
+        <!-- Playlist -->   
+        <div class="playlist">
+          
+        </div>
+        </div>
+    <script src="./main.js"></script>
+</body>
+</html>
