@@ -86,10 +86,10 @@ header h2 {
 }
 
 .dashboard.darkmode--active {
-    background-image: linear-gradient(to bottom right, #000, #001);
+    background-image: linear-gradient(to bottom right, #000, #003);
 }
 .playlist.darkmode--active {
-    background-image: linear-gradient(to left, #001, #000);
+    background-image: linear-gradient(to left, #003, #000);
 }
 
 .dashboard.darkmode--active header h2,
@@ -190,13 +190,15 @@ header h2 {
 
 /* Playlist */
 .player .playlist {
-    margin-top: 456px;
+    margin-top: 440px;
     padding: 0 8px 8px;    
 }
 
 .playlist .playlist__label {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 22px;
+    padding: 8px 0;
+    letter-spacing: 1.4px;
     color: var(--primary-color);
 }
 
@@ -208,9 +210,10 @@ header h2 {
 }
 
 .playlist-darkmode-btn {
-    font-size: 20px;
+    font-size: 30px;
     color: var(--primary-color);
     cursor: pointer;
+    padding: 8px 0;
 }
 
 .playlist-darkmode-btn .playlist-darkmode-btn--on {
