@@ -313,8 +313,7 @@ const app = {
                 if(songNode) {
                     _this.currentIndex = Number(songNode.dataset.index)
                     _this.loadCurrentSong()
-                    _this.renderSongs()
-                    _this.handleEvents()
+                    _this.renderSongs()                    
                     audio.play()
                 }
                 //Xử lý khi nhấn vào option
