@@ -203,7 +203,6 @@ const app = {
                 durTime.textContent = app.secondsToMs(this.duration)
             }
 
-            console.log()
             if (audio.duration) {
                 progress.value = Math.floor(audio.currentTime / audio.duration * 100)
             }
@@ -219,7 +218,6 @@ const app = {
                     _this.loadCurrentSong()
                 }
                 _this.renderSongs()
-                _this.handleEvents()
                 audio.play()                
             }
         }
@@ -247,7 +245,6 @@ const app = {
             }
             audio.play()
             _this.renderSongs()
-            _this.handleEvents()
 
             //Xử lý ScrollIntoView
         setTimeout(() => {
@@ -273,7 +270,6 @@ const app = {
             }
             audio.play()
             _this.renderSongs()
-            _this.handleEvents()
 
             //ScrollIntoView
             setTimeout(() => {
